@@ -1,0 +1,14 @@
+.box{
+    background: #002A3B;
+    padding: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.saperator{
+    width: 3px;
+    height: 100px;
+    background: #fff;
+}

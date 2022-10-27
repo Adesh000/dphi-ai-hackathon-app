@@ -1,15 +1,13 @@
 import React from "react";
-import img1 from '../assets/icons/Group 1000002515.svg';
-import img2 from '../assets/icons/Group 1000002516.svg';
-import img3 from '../assets/icons/Group 1000002518.svg';
+import '../Styles/Box.css';
 
-const Box = (image, title, info) => {
+const Box = (props) => {
     return (
         <div className="main">
-            <img src={img1} />
+            <img src={props.image} />
             <div className="text-box">
-                <h3>100K+</h3>
-                <p>AI model submission</p>
+                <h3>{props.title}</h3>
+                <p>{props.info}</p>
             </div>
         </div>
     )

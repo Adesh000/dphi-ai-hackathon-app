@@ -1,6 +1,6 @@
-.box{
+.boxes{
     background: #002A3B;
-    padding: 60px;
+    padding: 40px 100px;
     color: #fff;
     display: flex;
     align-items: center;
@@ -10,5 +10,5 @@
 .saperator{
     width: 3px;
     height: 100px;
-    background: #fff;
+    background: rgb(199, 196, 196);
 }

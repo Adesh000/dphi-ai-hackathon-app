@@ -9,12 +9,12 @@ import '../Styles/Stats.css';
 
 const Stats = () => {
     return (
-        <div className="box">
-            <Box />
+        <div className="boxes">
+            <Box image={img1} title="100K+" info="AI model submitted"/>
             <div className="saperator"></div>
-            <Box />
+            <Box image={img2} title="50K+" info="Data Scientists"/>
             <div className="saperator"></div>
-            <Box />
+            <Box image={img3} title="100+" info="AI Challenges hosted" />
         </div>
     )
 }

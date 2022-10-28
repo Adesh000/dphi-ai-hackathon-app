@@ -18,9 +18,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route exact path="/main" element={<Main />}>
-        </Route>
-        <Route exact path="/details" element={<CreateChallenge />}></Route>
+        <Route path="/main" element={ <Main /> }></Route>
+        <Route path="/details" element={ <CreateChallenge /> }></Route>
       </Routes>
     </div>
     </Router>

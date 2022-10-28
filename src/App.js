@@ -2,20 +2,28 @@
 import Navbar from './Components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Hero from './Components/Hero';
-import Stats from './Components/Stats';
-import Features from './Components/Features';
-import Search_Bar from './Components/SearchBar';
+import CreateChallenge from './Components/CreateChallenge';
+import Main from './Components/Main';
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
+    <Router>
+
     <div className="App">
       <Navbar />
-      <Hero />
-      <Stats />
-      <Features />
-      <Search_Bar />
+      <Routes>
+        <Route exact path="/main" element={<Main />}>
+        </Route>
+        <Route exact path="/details" element={<CreateChallenge />}></Route>
+      </Routes>
     </div>
+    </Router>
   );
 }
 

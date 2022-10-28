@@ -6,12 +6,12 @@ import { Input } from "reactstrap";
 const bgStyle = {
     background: "#002A3B",
     color: "#fff",
-    textContent: "center"
+    padding: "100px"
 }
 const Search_Bar = () => {
     return (
         <div style={bgStyle}>
-            <h3>Explore Challenges</h3>
+            <h3 className="text-center">Explore Challenges</h3>
             <div>
                 <Input
                     bsSize="sm"

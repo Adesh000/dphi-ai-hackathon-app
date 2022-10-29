@@ -72,7 +72,7 @@ const CreateChallenge = () => {
     return (
         <div>
             <h3 className="bg-light p-5 fw-bold">Challenge Details</h3>
-            <Form className="p-5">
+            <Form method="POST" className="p-5">
                 <FormGroup>
                     <Label for="challengeName" className="fw-bold">
                         Challenge Name
@@ -144,7 +144,7 @@ const CreateChallenge = () => {
                 </FormGroup>
                 <Button color="primary" size="sm" onClick={postData}>Submit</Button>
             </Form>
-            <Link to="/main" className="m-5"> <Button color="success" size="lg">Creat Challenge</Button> </Link>
+            <Link to="/" className="m-5"> <Button color="success" size="lg">Creat Challenge</Button> </Link>
         </div>
     )
 }
